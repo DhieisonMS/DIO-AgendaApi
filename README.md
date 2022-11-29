@@ -13,6 +13,6 @@
 - [ ] create controller
 
 ## Start application
-´´´ bash
-    dotnet watch run
-´´´
+```bash
+dotnet watch run
+```
