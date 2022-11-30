@@ -11,8 +11,8 @@
 - [x] create entidade
 - [x] dotnet-ef migrations add ""
 - [x] dotnet-ef database update
-- [ ] create controller
-- [] fix Datetime =>
+- [x] create controller
+- [x] fix Datetime =>
 
 ## Start application
 
