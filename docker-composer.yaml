@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+    agenda-webapi:
+        image: mcr.microsoft.com/dotnet/sdk:7.0
+        environment:
+        - DOTNET_URLS=http://+:5192
+        ports:
+        - 5192:5192
+        # command: dotnet watch run
+        working_dir: /opt/app
+        volumes:
+        - ./src/:/opt/app
+        tty: true
+        depends_on:
+            - mysql-agenda
+    
+    mysql-agenda:
+        image: mysql
+        ports:
+        - 3306:3306
+        environment:
+            MYSQL_ROOT_PASSWORD: 12345teste
+            MYSQL_DATABASE: agendaDB

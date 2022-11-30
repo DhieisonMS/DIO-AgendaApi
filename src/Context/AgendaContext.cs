@@ -9,6 +9,6 @@ namespace src.Context
         public AgendaContext(DbContextOptions<AgendaContext> options): base(options)
         {}
 
-        public DbSet<AgendaTask>?AgendaTasks{get; set;}
+        public DbSet<AgendaTask>AgendaTasks{get; set;}
     }
 }
